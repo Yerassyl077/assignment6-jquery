@@ -1,0 +1,155 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #252525;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 18px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+h3 {
+    margin: 8px 0;
+}
+
+button {
+    background: #2879dc;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 13px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #165fae;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.accordion-title {
+    width: 100%;
+    text-align: left;
+    background: #e8effa;
+    color: #222;
+}
+
+.accordion-title:hover {
+    background: #d8e5f7;
+}
+
+.accordion-panel {
+    display: none;
+    padding: 4px 12px;
+    border: 1px solid #e0e0e0;
+}
+
+#skillList li {
+    margin-bottom: 7px;
+}
+
+#skillMessage, #formMessage {
+    min-height: 18px;
+    font-size: 14px;
+}
+
+.skill-row {
+    margin: 15px 0;
+}
+
+.skill-track {
+    width: 100%;
+    height: 18px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    width: 0;
+    height: 100%;
+    background: #2879dc;
+}
+
+.dark {
+    background: #20242b;
+    color: #eee;
+}
+
+.dark .card {
+    background: #303740;
+    border-color: #555;
+}
+
+.dark .accordion-title {
+    background: #46515e;
+    color: white;
+}
+
+.dark .accordion-panel {
+    border-color: #555;
+}
+
+.dark a {
+    color: #9ccaff;
+}
+
+@media (max-width: 520px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header class="card">
+            <h1>My Profile</h1>
+            <h2 id="greeting"></h2>
+            <p id="headline"></p>
+            <p id="intro">Welcome to My Portfolio. This is my personal page about learning web development.</p>
+            <p>Birth Year: <span id="birthYear"></span> | Age: <span id="age"></span> | Developer: <span id="developer"></span></p>
+            <p>Hobbies: <span id="hobbies"></span></p>
+            <button id="lightBtn" type="button">Light Theme</button>
+            <button id="darkBtn" type="button">Dark Theme</button>
+        </header>
+
+        <section class="card">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a student interested in programming and websites.</p>
+            <div class="buttons">
+                <button id="hideBtn" type="button">Hide</button>
+                <button id="showBtn" type="button">Show</button>
+                <button id="toggleBtn" type="button">Toggle</button>
+            </div>
+            <div id="aboutDetails">
+                <p><strong>Status:</strong> Currently learning jQuery!</p>
+                <ul>
+                    <li>I enjoy creating simple websites.</li>
+                    <li>I like music and sports.</li>
+                    <li>My goal is to improve my JavaScript skills.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">My Project Gallery</h2>
+            <div class="buttons">
+                <button id="fadeInBtn" type="button">Fade In</button>
+                <button id="fadeOutBtn" type="button">Fade Out</button>
+                <button id="fadeToggleBtn" type="button">Fade Toggle</button>
+            </div>
+            <div class="gallery">
+                <img class="gallery-image" src="images/project-profile.jpg" alt="My profile project screenshot">
+                <img class="gallery-image" src="images/project-hobbies.jpg" alt="My hobbies project screenshot">
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">My Favorites</h2>
+            <div class="buttons">
+                <button id="slideUpBtn" type="button">Slide Up All</button>
+                <button id="slideDownBtn" type="button">Slide Down All</button>
+            </div>
+            <h3><button class="accordion-title" type="button">My Favorite Music</button></h3>
+            <div class="accordion-panel"><p>I enjoy listening to pop music while studying.</p></div>
+            <h3><button class="accordion-title" type="button">My Favorite Movie</button></h3>
+            <div class="accordion-panel"><p>I like science fiction movies.</p></div>
+            <h3><button class="accordion-title" type="button">My Favorite Subject</button></h3>
+            <div class="accordion-panel"><p>My favorite subject is Web Technologies.</p></div>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">My Technical Skills</h2>
+            <ul id="skillList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+            </ul>
+            <label for="newSkill">New Skill</label>
+            <input id="newSkill" type="text" placeholder="Enter a skill">
+            <div class="buttons">
+                <button id="addSkillBtn" type="button">Add Skill</button>
+                <button id="prependSkillBtn" type="button">Prepend Skill</button>
+                <button id="removeSkillBtn" type="button">Remove Skill</button>
+            </div>
+            <p id="skillMessage"></p>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">My GitHub</h2>
+            <p><a id="socialLink" href="https://github.com/Yerassyl077" target="_blank" rel="noopener noreferrer">My GitHub Profile</a></p>
+            <button id="changeLinkBtn" type="button">Change Link</button>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">Contact / Update Profile</h2>
+            <form id="contactForm">
+                <label for="nameInput">Name</label>
+                <input id="nameInput" type="text" required>
+                <label for="emailInput">Email</label>
+                <input id="emailInput" type="email" required placeholder="name@example.com">
+                <button type="submit">Update Name</button>
+            </form>
+            <p>Live Name: <span id="liveName"></span></p>
+            <p>Live Email: <span id="liveEmail"></span></p>
+            <p id="formMessage"></p>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">My Skill Levels</h2>
+            <div class="skill-row">
+                <p>HTML — 85%</p>
+                <div class="skill-track"><div class="skill-fill" data-level="85"></div></div>
+            </div>
+            <div class="skill-row">
+                <p>CSS — 70%</p>
+                <div class="skill-track"><div class="skill-fill" data-level="70"></div></div>
+            </div>
+            <div class="skill-row">
+                <p>JavaScript — 60%</p>
+                <div class="skill-track"><div class="skill-fill" data-level="60"></div></div>
+            </div>
+            <button id="animateBtn" type="button">Animate My Skills</button>
+        </section>
+    </main>
+</body>
+</html>
